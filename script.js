@@ -21,7 +21,7 @@ function displayMovies(movies){
         return
     }
 
-    movies.foreach(movie => {
+    movies.forEach(movie => {
         let movieDiv = document.createElement('div')
         movieDiv.classList.add('movie')
 
@@ -35,7 +35,7 @@ function displayMovies(movies){
         overview.textContent = movie.overview
 
         let posterPath = urlImg + movie.poster_path
-        let poster = document.createElement(img)
+        let poster = document.createElement('img')
         poster.src = posterPath
 
         movieDiv.appendChild(poster)
