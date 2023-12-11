@@ -13,7 +13,7 @@ function searchMovies(){
 }
 
 function displayMovies(movies){
-    let resultContainer = documet.getElementById('results')
+    let resultContainer = document.getElementById('results')
     resultContainer.innerHTML = ''
 
     if(movies.length ===0 ){
